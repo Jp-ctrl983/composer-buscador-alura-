@@ -1,0 +1,43 @@
+{
+    "name": "jp-ctrl983/buscador-curso",
+    "description": "Buscador de cursos alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jp-ctrl983",
+            "email": "joao.fernandes37.pedro@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "symfony/dom-crawler": "^4.2",
+        "symfony/css-selector": "^7.1"
+    },
+    "autoload": {
+        "files": ["./functions.php"],
+        "psr-4": {
+            "Alura\\BuscadorDeCursos\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "squizlabs/php_codesniffer": "^3.10",
+        "phan/phan": "^5.4"
+    },
+    "scripts": {
+        "tests": "phpunit Tests\\TestBuscadorDeCursos.php",
+        "cs": "phpcs --standard=PSR12 src/",
+        "phan": "phan --allow-polyfill-parser",
+        "check": [
+            "@phan",
+            "@tests",
+            "@cs"
+        ],
+        "post-update-cmd": [
+            "@tests"
+        ]
+    },
+    "scripts-descriptions": {
+        "check": "Roda as verificações do código. PHAN, PHPCS e PHPUNIT"
+    }
+}
