@@ -3,7 +3,7 @@ return [
 
     "target_php_version" => 8.3,
 
-    //lista de diretorios que ele presisa nalizar
+    //lista de diretorios que ele presisa Analizar
     'directory_list' => [
         'src',
         'vendor/symfony/dom-crawler',
