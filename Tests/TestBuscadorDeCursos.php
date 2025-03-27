@@ -1,4 +1,5 @@
 <?php
+
 //para exacutar este arquivo: vendor\bin\phpunit tests\TesteBuscadorDeCursos.php
 
 namespace Alura\BuscadorDeCursos\Tests;
