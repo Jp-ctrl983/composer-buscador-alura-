@@ -1,7 +1,7 @@
 <?php
 return [
 
-    "target_php_version" => 8.3,
+    "target_php_version" => 8.2,
 
     //lista de diretorios que ele presisa Analizar
     'directory_list' => [
